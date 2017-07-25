@@ -4,7 +4,8 @@
   "description": "portfolio",
   "main": "main.js",
   "scripts": {
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "dev": "gulp dev"
   },
   "repository": {
     "type": "git",
