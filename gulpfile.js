@@ -30,7 +30,7 @@ gulp.task('styles', function () {
   .pipe(browserSync.reload({stream:true}))
 });
 
-//script paths
+//script paths - might not be necessary
 gulp.task('scripts', function() {
   return gulp.src('./js/**/*.js')
       .pipe(concat('main.js'))
