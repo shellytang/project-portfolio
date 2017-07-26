@@ -3,8 +3,9 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const concat = require('gulp-concat');
-const rename = require('gulp-rename');
-const uglify = require('gulp-uglify');
+const cleanCSS = require('gulp-clean-css');
+// const rename = require('gulp-rename');
+// const uglify = require('gulp-uglify');
 const browserSync = require('browser-sync');
 const autoprefixer = require('gulp-autoprefixer');
 
@@ -24,6 +25,7 @@ gulp.task('styles', function () {
     onError: browserSync.notify
   }))
   .pipe(autoprefixer(['last 2 versions'], { cascade: true }))
+  .pipe(cleanCSS())
   .pipe(gulp.dest('./css/'))
   .pipe(browserSync.reload({stream:true}))
 });
@@ -33,9 +35,9 @@ gulp.task('scripts', function() {
   return gulp.src('./js/**/*.js')
       .pipe(concat('main.js'))
       .pipe(gulp.dest('./'))
-      .pipe(rename('main.min.js'))
-      .pipe(uglify())
-      .pipe(gulp.dest('./'))
+      // .pipe(rename('main.min.js'))
+      // .pipe(uglify())
+      // .pipe(gulp.dest('./'))
       .pipe(browserSync.reload({stream:true}));
 });
 

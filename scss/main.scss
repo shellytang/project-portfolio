@@ -1,4 +1,42 @@
+@import 'vars';
+// @import 'mixins';
+// @import 'functions';
+@import "../node_modules/bulma/bulma.sass";
+
+// **** BASE STYLES **** //
 * {
-  background-color: green;
-  color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// ***** NAVBAR STYLES ****** //
+.navbar {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 9999;
+}
+
+.navbar-burger:hover {
+  background-color: $navbar-background;
+}
+
+.navbar-end {
+  .navbar-item {
+    text-align: center;
+  }
+}
+
+@include desktop {
+  .navbar-end {
+    .navbar-item {
+      text-transform: uppercase;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.2s;
+      &:hover, &:active {
+        border-bottom: 2px solid $primary;
+      }
+    }
+  }
 }

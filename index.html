@@ -6,34 +6,54 @@
     <title>Portfolio</title>
     <meta name="description" content="Project portfolio">
     <meta name="author" content="Shelly Tang">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <header>
-      <nav>
-        <div>
-        <!-- TODO: add logo -->
-        <a href="https://placeholder.com"><img src="http://via.placeholder.com/366x366"></a>
-          <!-- <img src="" alt="logo" class=""> -->
-          <ul class="main-nav">
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#work">Work</a></li>
-              <li><a href="#contact">Contact</a></li>
-          </ul>
-          <!-- TODO: add hamburger icon -->
-          <a class="mobile-nav-icon"><i></i></a>
+
+    <nav class="navbar ">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img src="./" alt="placeholder" width="112" height="28">
+        </a>
+
+        <div class="navbar-burger burger" data-target="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </nav>
-      <div>
-        <h1>Hi, I'm Shelly.</h1>
-        <p>Welcome to my portfolio site</p>
-        <a href="#">Have look around</a>
       </div>
-    </header>
+
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#" target="_blank">
+            About
+          </a>
+          <a class="navbar-item" href="#" target="_blank">
+            Skills
+          </a>
+          <a class="navbar-item" href="#" target="_blank">
+            Projects
+          </a>
+          <a class="navbar-item" href="#" target="_blank">
+            Contact
+          </a>
+        </div>
+      </div>
+    </nav>
+
+
+  <header>
+    <div class="header-item">
+      <h1>Hi, I'm Shelly.</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, sint corporis dolores omnis consectetur quaerat nesciunt beatae maiores, itaque labore ex vero pariatur nulla non fugiat, facilis eaque sunt doloremque!</p>
+    </div>
+  </header>
 
     <section class="About">
-      <div>
+      <div> -->
         <!-- TODO: add photo -->
         <img src="/" alt="shelly-photo">
       </div>
