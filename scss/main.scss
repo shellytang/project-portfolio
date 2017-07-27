@@ -18,6 +18,7 @@
 
 .navbar {
   position: fixed;
+  top: 0;
   width: 100%;
   box-shadow: 0 2px 2px $white-ter;
   z-index: 9999;
@@ -51,4 +52,9 @@
       }
     }
   }
+}
+
+// *** Landing *** //
+.landing {
+  margin-top: $navbar-height;
 }
