@@ -10,7 +10,16 @@
     box-sizing: border-box;
 }
 
-// ***** NAVBAR STYLES ****** //
+h2.title:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+// ***** NAVBAR ****** //
 .logo {
   height: 300px;
   width: auto;
@@ -26,19 +35,11 @@
 
 .navbar-brand {
   margin-left: 20px;
-  .navbar-item:hover {
-    background-color: $navbar-background;
-  }
 }
 
+.navbar-item:hover,
 .navbar-burger:hover {
   background-color: $navbar-background;
-}
-
-.navbar-end {
-  .navbar-item {
-    text-align: center;
-  }
 }
 
 @include desktop {
@@ -54,7 +55,18 @@
   }
 }
 
-// *** Landing *** //
-.landing {
+// *** LANDING *** //
+#landing {
   margin-top: $navbar-height;
+}
+
+// **** ABOUT **** //
+.shelly-photo {
+  border-radius: 100%;
+  width: 50%;
+  margin: 0 25%;
+}
+
+#about {
+  background-color: $secondary-background;
 }
