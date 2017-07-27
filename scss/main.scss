@@ -18,9 +18,17 @@
 
 .navbar {
   position: fixed;
+  top: 0;
   width: 100%;
-  box-shadow: 0 2px 2px #efefef;
+  box-shadow: 0 2px 2px $white-ter;
   z-index: 9999;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+  .navbar-item:hover {
+    background-color: $navbar-background;
+  }
 }
 
 .navbar-burger:hover {
@@ -35,13 +43,18 @@
 
 @include desktop {
   .navbar-end {
+    margin-right: 30px;
     .navbar-item {
-      text-transform: uppercase;
       border-bottom: 2px solid transparent;
       transition: border-bottom 0.2s;
       &:hover, &:active {
-        border-bottom: 2px solid $primary;
+        border-bottom: 4px solid $primary;
       }
     }
   }
+}
+
+// *** Landing *** //
+.landing {
+  margin-top: $navbar-height;
 }
