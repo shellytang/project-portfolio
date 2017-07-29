@@ -1,6 +1,7 @@
 @import 'vars';
-// @import 'mixins';
+@import 'mixins';
 // @import 'functions';
+@import "font-awesome/font-awesome";
 @import "../node_modules/bulma/bulma.sass";
 
 // **** BASE STYLES **** //
@@ -19,6 +20,7 @@ h2.title:after {
     margin: 0 auto;
     margin-top: 25px;
 }
+
 // ***** NAVBAR ****** //
 .logo {
   height: 300px;
@@ -69,4 +71,23 @@ h2.title:after {
 
 #about {
   background-color: $secondary-background;
+  @include paragraph-spacing;
+  @include column-position;
+}
+
+// **** SKILLS **** //
+#skills,
+#work {
+  // background-color: $secondary-background;
+  @include column-position;
+}
+
+// **** WORK *** //
+h3 {
+  // outline: 2px solid blue;
+  margin-top: 15px;
+}
+
+#work {
+  @include paragraph-spacing;
 }

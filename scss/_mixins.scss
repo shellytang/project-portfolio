@@ -1,1 +1,12 @@
 
+@mixin column-position {
+  .columns {
+    margin-top: 50px  
+  }
+}
+
+@mixin paragraph-spacing {
+  p {
+    margin-bottom: 15px;
+  }
+}

@@ -37,11 +37,11 @@
           <a class="navbar-item" href="#" target="_blank">
             About
           </a>
-          <a class="navbar-item" href="#" target="_blank">
+          <!-- <a class="navbar-item" href="#" target="_blank">
             Skills
-          </a>
+          </a> -->
           <a class="navbar-item" href="#" target="_blank">
-            Projects
+            Work
           </a>
           <a class="navbar-item" href="#" target="_blank">
             Contact
@@ -50,16 +50,16 @@
       </div>
     </nav>
 
-    <section class="hero is-fullheight" id="landing">
+    <header class="hero is-fullheight" id="landing">
       <div class="hero-body">
         <div class="container has-text-centered">
           <h1 class="title is-spaced">Hi, I'm Shelly.</h1>
           <h2 class="subtitle">I'm a full-stack developer based in Seattle. Welcome to my portfolio site.</h2>
         </div>
       </div>
-    </section>
+    </header>
 
-    <section class="hero is-fullheight" id="about">
+    <section class="hero is-medium" id="about">
       <div class="hero-body">
         <div class="container">
           <h2 class="title has-text-centered">About</h2>
@@ -68,125 +68,94 @@
                 <a href="https://placeholder.com"><img src="http://via.placeholder.com/350x350" class="shelly-photo"></a>
             </div>
             <div class="column is-half">
-              <p>Munch on tasty moths meow loudly just to annoy owners. Curl into a furry donut eat the fat cats food. Rub face on everything lies down yet playing with balls of wool, meow to be let in. Sweet beast fooled again thinking the dog likes me. Curl into a furry donut eat the fat cats food.<p></br>
-              <p>Munch on tasty moths meow loudly just to annoy owners. Curl into a furry donut eat the fat cats food. Rub face on everything lies down yet playing with balls of wool, meow to be let in. Sweet beast fooled again thinking the dog likes me. Curl into a furry donut eat the fat cats food.</p>
+              <p>I'm Shelly Tang, a full-stack JavaScript developer with a background in project management and operations.</p>
+              <p>I'm passionate about open source applications and innovation through collaboration. The opportunity to work with others and build something great is a process that continues to draw me in and motivate me as a developer.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-
-
-    <section class="Skills">
-      <div>
-        <h2>Skills</h2>
-        <p>Proudly present butt to human purr or where is my slave? I'm getting hungry so cereal boxes make for five star accommodation . Tuxedo cats always looking dapper leave hair everywhere rub face on everything.</p>
-      </div>
-
-      <div>
-        <div class="methodologies">
-          <!-- TODO: add icon -->
-          <i class=""></i>
-          <h3>Methodologies</h3>
-          <div>
-            <ul>
-              <li>Functional Programming</li>
-              <li>Test Driven Development</li>
-              <li>MVC Design</li>
-              <li>RESTful API Architecture</li>
-              <li>Continuous Delopyment &amp; Integration</li>
-              <li>Agile Software Development</li>
-            </ul>
+    <section class="hero is-fullheight" id="skills">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title has-text-centered">Skills</h2>
+          <div class="columns has-text-centered">
+            <div class="column process">
+              <span class="icon is-large">
+                <i class="fa fa-cogs" aria-hidden="true"></i>
+              </span>
+              <h3 class="title is-4">Process</h3>
+              <div>
+                <p>MVC Design, Test Driven Development, Continuous Integration &amp; Deployment<p>
+              </div>
+            </div>
+            <div class="column font-end">
+              <span class="icon is-large">
+                <i class="fa fa-window-restore" aria-hidden="true"></i>
+              </span>
+              <h3 class="title is-4">Font-End</h3>
+              <div>
+                <p>AngularJS, React, HTML5, Sass/SCSS, CSS3, jQuery, Karma/Jasmine</p>
+              </div>
+            </div>
+            <div class="column back-end">
+              <span class="icon is-large">
+                <i class="fa fa-database" aria-hidden="true"></i>
+              </span>
+              <h3 class="title is-4">Back-End</h3>
+              <div>
+                <p>Node.js, Express, MongoDB, Mongoose, RESTful API Architecture, Mocha/Chai</p>
+              </div>
+            </div>
+            <div class="column tools">
+              <span class="icon is-large">
+                <i class="fa fa-wrench" aria-hidden="true"></i>
+              </span>
+              <h3 class="title is-4">Tools</h3>
+              <div>
+                <p>Webpack, NPM, Yarn, Travis CI, Heroku, AWS, Git</p>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="tools">
-          <!-- TODO: add icon -->
-          <i class=""></i>
-          <h3>Tools</h3>
-          <div>
-            <ul>
-              <li>Git</li>
-              <li>Webpack</li>
-              <li>Gulp</li>
-              <li>Yarn</li>
-              <li>NPM</li>
-              <li>Travis CI</li>
-              <li>Heroku</li>
-              <li>AWS</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="font-end">
-          <!-- TODO: add icon -->
-          <i class=""></i>
-          <h3>Font-End</h3>
-          <div>
-            <ul>
-              <li>AngularJS</li>
-              <li>React</li>
-              <li>Sass/SCSS</li>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>jQuery</li>
-              <li>Karma/Jasmine</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="back-end">
-          <!-- TODO: add icon -->
-          <i class=""></i>
-          <h3>Back-End</h3>
-          <div>
-            <ul>
-              <li>Node.js</li>
-              <li>Express</li>
-              <li>MongoDB/Mongoose</li>
-              <li>Mocha/Chai</li>
-            </ul>
-          </div>
-        </div>
-
       </div>
     </section>
 
-    <section class="Work">
-      <div>
-        <h2>Projects</h2>
-      </div>
+    <section class="hero is-fullheight" id="work">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title has-text-centered">Projects</h2>
+            <div class="columns is-multiline">
+              <div class="column is-one-third">
+                  <figure class="image">
+                    <a href="#"><img src="http://via.placeholder.com/150x128"></a>
+                  </figure>
+                  <h3 class="title is-4">MomentUs</h3>
+                  <p>Digital scrapbook that allows users to create, store, and view memories based on location.</p>
+                  <p>Utilized AngularJS, Node.js, Express, MongoDB, AWS, Webpack, Karma, Mocha/Chai, Angular UI Bootstrap, MVC architecture.</p>
+              </div>
 
-      <div class="project-details">
-        <div>
-          <!-- TODO: add project img -->
-          <a href="#"><img src="./" alt="project-1"></a>
-          <h3>Project 1</h3>
-          <p>Description of project</p>
+              <div class="column is-one-third">
+                  <figure class="image">
+                    <a href="#"><img src="http://via.placeholder.com/150x128"></a>
+                  </figure>
+                  <h3 class="title is-4">Narratus</h3>
+                  <p>Mobile application that provides a platform for users to share and collaborate on short stories.</p>
+                  <p>Collaborated with iOS team to build RESTful API using Node.js, Express, MongoDB, Mocha/Chai.</p>
+              </div>
+
+              <div class="column is-one-third">
+                  <figure class="image">
+                    <a href="#"><img src="http://via.placeholder.com/150x128"></a>
+                  </figure>
+                  <h3 class="title is-4">Inspector Restaurant</h3>
+                  <p>Responsive, single page application that integrates with Seattle City Data and Google Maps API to show health inspection ratings for Seattle restaurants.<p>
+                  <p>Utilized Express, Handlebars JS, Page JS, HTML, CSS, jQuery, JavaScript.</p>
+              </div>
+
+            </div>
         </div>
-
-        <div>
-          <!-- TODO: add project img -->
-          <a href="#"><img src="./" alt="project-2"></a>
-          <h3>Project 2</h3>
-          <p>Description of project</p>
-        </div>
-
-        <div>
-          <!-- TODO: add project img -->
-          <a href="#"><img src="./" alt="project-3"></a>
-          <h3>Project 3</h3>
-          <p>Description of project</p>
-        </div>
-
-        <div>
-          <!-- TODO: add project img -->
-          <a href="#"><img src="./" alt="project-4"></a>
-          <h3>Project 4</h3>
-          <p>Description of project</p>
-        </div>
-
       </div>
     </section>
 
