@@ -71,15 +71,23 @@ h2.title:after {
 
 #about {
   background-color: $secondary-background;
-  .columns {
-    @include column-position;
-  }
+  @include paragraph-spacing;
+  @include column-position;
 }
 
 // **** SKILLS **** //
-#skills {
+#skills,
+#work {
   // background-color: $secondary-background;
-  .columns {
-    @include column-position;
-  }
+  @include column-position;
+}
+
+// **** WORK *** //
+h3 {
+  // outline: 2px solid blue;
+  margin-top: 15px;
+}
+
+#work {
+  @include paragraph-spacing;
 }
