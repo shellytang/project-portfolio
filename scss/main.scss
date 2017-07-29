@@ -21,6 +21,9 @@ h2.title:after {
     margin-top: 25px;
 }
 
+h3 {
+  margin-top: 15px;
+}
 // ***** NAVBAR ****** //
 .logo {
   height: 300px;
@@ -76,18 +79,37 @@ h2.title:after {
 }
 
 // **** SKILLS **** //
-#skills,
-#work {
+#skills {
   // background-color: $secondary-background;
   @include column-position;
 }
 
 // **** WORK *** //
-h3 {
-  // outline: 2px solid blue;
-  margin-top: 15px;
-}
-
 #work {
   @include paragraph-spacing;
+  @include column-position;
+}
+
+// *** CONTACT *** //
+.fa-github:hover {
+  color: #000;
+}
+
+.fa-linkedin-square:hover {
+  color: #3498db;
+}
+
+.fa-envelope-o:hover {
+  color: #e74c3c;
+}
+
+#work ul {
+  @include column-position;
+}
+
+@include desktop {
+  #contact li:nth-child(2) {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
 }
