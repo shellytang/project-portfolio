@@ -1,5 +1,5 @@
 @import 'vars';
-// @import 'mixins';
+@import 'mixins';
 // @import 'functions';
 @import "../node_modules/bulma/bulma.sass";
 
@@ -19,6 +19,7 @@ h2.title:after {
     margin: 0 auto;
     margin-top: 25px;
 }
+
 // ***** NAVBAR ****** //
 .logo {
   height: 300px;
@@ -69,4 +70,15 @@ h2.title:after {
 
 #about {
   background-color: $secondary-background;
+  .columns {
+    @include column-position;
+  }
+}
+
+// **** SKILLS **** //
+#skills {
+  // background-color: $secondary-background;
+  .columns {
+    @include column-position;
+  }
 }
