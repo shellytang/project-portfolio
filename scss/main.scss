@@ -75,22 +75,34 @@ h3 {
 #about {
   background-color: $secondary-background;
   @include paragraph-spacing;
-  @include column-position;
+  .column {
+    @include top-spacing;
+  }
+
 }
 
 // **** SKILLS **** //
 #skills {
   // background-color: $secondary-background;
-  @include column-position;
+  .column {
+    @include top-spacing;
+  }
 }
 
 // **** WORK *** //
 #work {
   @include paragraph-spacing;
-  @include column-position;
+  .column {
+    @include top-spacing;
+  }
 }
 
 // *** CONTACT *** //
+
+form {
+  @include top-spacing;
+}
+
 .fa-github:hover {
   color: #000;
 }
@@ -103,9 +115,6 @@ h3 {
   color: #e74c3c;
 }
 
-#work ul {
-  @include column-position;
-}
 
 @include desktop {
   #contact li:nth-child(2) {
