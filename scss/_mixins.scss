@@ -1,12 +1,22 @@
 
-@mixin column-position {
-  .columns {
-    margin-top: 50px  
-  }
+@mixin top-spacing {
+    margin-top: 50px
 }
 
 @mixin paragraph-spacing {
-  p {
+  // p:first-child {
     margin-bottom: 15px;
+  // }
+}
+
+@mixin darken-social-icon($color) {
+  &:hover {
+    color: darken($color, 10%);
+  }
+}
+
+@mixin lighten-social-icon($color) {
+  &:hover {
+    color: lighten($color, 30%);
   }
 }

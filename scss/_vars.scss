@@ -2,16 +2,14 @@
 
 // === FONTS ====
 $family-sans-serif: 'Quicksand', Arial, sans-serif;
+$family-primary: $family-sans-serif;
 
 //==== COLORS =====
 $primary: #e67e22;
 $text: #555;
-$family-primary: $family-sans-serif;
-$secondary-background: $white-ter;
 $link: $text;
-// $navbar-background: rgba(255, 255, 255, 0.98);
-// $navbar-item:
-// $navbar-item-active:
-// $navbar-item-hover: $primary;
-// $navbar-item-hover-background: $navbar-background;
-// $navbar-item-active-background: $navbar-background;
+$secondary-background: $white-ter;
+
+$linkedin-social: #3498db;
+$github-social: #000;
+$gmail-social: #e74c3c;

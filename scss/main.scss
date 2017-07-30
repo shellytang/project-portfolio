@@ -24,6 +24,7 @@ h2.title:after {
 h3 {
   margin-top: 15px;
 }
+
 // ***** NAVBAR ****** //
 .logo {
   height: 300px;
@@ -74,42 +75,55 @@ h3 {
 
 #about {
   background-color: $secondary-background;
-  @include paragraph-spacing;
-  @include column-position;
+  p:first-child {
+    @include paragraph-spacing;
+  }
+  .column {
+    @include top-spacing;
+  }
 }
 
 // **** SKILLS **** //
 #skills {
   // background-color: $secondary-background;
-  @include column-position;
+  .column {
+    @include top-spacing;
+  }
 }
 
 // **** WORK *** //
 #work {
-  @include paragraph-spacing;
-  @include column-position;
+  .column {
+    @include top-spacing;
+    p {
+      @include paragraph-spacing;
+    }
+  }
 }
 
 // *** CONTACT *** //
-.fa-github:hover {
-  color: #000;
+form {
+  @include top-spacing;
 }
 
-.fa-linkedin-square:hover {
-  color: #3498db;
+.fa-github {
+  color: $github-social;
+  @include lighten-social-icon($github-social);
 }
 
-.fa-envelope-o:hover {
-  color: #e74c3c;
+.fa-linkedin-square {
+  color: $linkedin-social;
+  @include darken-social-icon($linkedin-social);
 }
 
-#work ul {
-  @include column-position;
+.fa-envelope-o {
+  color: $gmail-social;
+  @include darken-social-icon($gmail-social);
 }
 
 @include desktop {
-  #contact li:nth-child(2) {
-    padding-right: 100px;
-    padding-left: 100px;
+  a.icon:nth-of-type(2) {
+    padding-right: 30px;
+    padding-left: 30px;
   }
 }
