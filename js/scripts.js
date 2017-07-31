@@ -1,7 +1,7 @@
 'use strict';
 
 $(function() {
-
+// navbar hamburger menu
   $('.navbar-burger').on('click', function(event) {
     event.preventDefault();
     $(this).toggleClass('is-active');
@@ -16,13 +16,13 @@ $(function() {
     }
   });
 
-
   // scroll navigation
   $('a[href^="#"]').on('click', function(event) {
     let target = $(this.getAttribute('href'));
     if(target.length) {
       event.preventDefault();
 
+// set offset for screens smaller than desktop
       if($(window).width() < 1000 ){
         $('html, body').stop().animate({
           scrollTop: target.offset().top - 50
@@ -35,6 +35,5 @@ $(function() {
         }, 1100);
       }
     }
-
   });
 });
