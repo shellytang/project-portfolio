@@ -98,28 +98,33 @@ h3 {
       @include bottom-spacing;
     }
   }
-}
 
-h3 {
-  @include bottom-spacing;
-  &:hover {
-    color: $link-secondary;
+  h3 {
+    @include bottom-spacing;
+    &:hover {
+      color: $link-secondary;
+    }
   }
-}
 
-#work .image {
-  border: 1px solid $grey-lighter;
+  .image {
+    border: 1px solid $grey-lighter;
+  }
+
 }
 
 @include desktop {
-  #work .image {
-    transform: scale(1.00);
-    transition: transform 0.5s, opacity 0.5s;
+  #work {
+    padding-top: 15vh;
+    .image {
+      transform: scale(1.00);
+      transition: transform 0.5s, opacity 0.5s;
 
-    &:hover {
-      transform: scale(.95);
+      &:hover {
+        transform: scale(.95);
+      }
     }
   }
+
 }
 
 // *** CONTACT *** //
