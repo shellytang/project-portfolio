@@ -98,22 +98,46 @@ h3 {
       @include bottom-spacing;
     }
   }
-}
 
-h3 {
-  @include bottom-spacing;
-  &:hover {
-    color: $link-secondary;
+  h3 {
+    @include bottom-spacing;
+    &:hover {
+      color: $link-secondary;
+    }
   }
+
+  .image {
+    border: 1px solid $grey-lighter;
+  }
+
 }
 
-#work .image {
-  border: 1px solid $grey-lighter;
+@include desktop {
+  #work {
+    padding-top: 15vh;
+    .image {
+      transform: scale(1.00);
+      transition: transform 0.5s, opacity 0.5s;
+
+      &:hover {
+        transform: scale(.95);
+      }
+    }
+  }
+
 }
 
 // *** CONTACT *** //
 form {
   @include top-spacing;
+}
+
+@include desktop {
+  form {
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 
 .fa-github {
