@@ -1,6 +1,5 @@
 @import 'vars';
 @import 'mixins';
-// @import 'functions';
 @import "font-awesome/font-awesome";
 @import "../node_modules/bulma/bulma.sass";
 
@@ -76,7 +75,7 @@ h3 {
 #about {
   background-color: $secondary-background;
   p:first-child {
-    @include paragraph-spacing;
+    @include bottom-spacing;
   }
   .column {
     @include top-spacing;
@@ -96,9 +95,20 @@ h3 {
   .column {
     @include top-spacing;
     p {
-      @include paragraph-spacing;
+      @include bottom-spacing;
     }
   }
+}
+
+h3 {
+  @include bottom-spacing;
+  &:hover {
+    color: $link-secondary;
+  }
+}
+
+#work .image {
+  border: 1px solid $grey-lighter;
 }
 
 // *** CONTACT *** //

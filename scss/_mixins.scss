@@ -3,10 +3,8 @@
     margin-top: 50px
 }
 
-@mixin paragraph-spacing {
-  // p:first-child {
+@mixin bottom-spacing {
     margin-bottom: 15px;
-  // }
 }
 
 @mixin darken-social-icon($color) {
