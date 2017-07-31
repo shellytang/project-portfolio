@@ -111,6 +111,17 @@ h3 {
   border: 1px solid $grey-lighter;
 }
 
+@include desktop {
+  #work .image {
+    transform: scale(1.00);
+    transition: transform 0.5s, opacity 0.5s;
+
+    &:hover {
+      transform: scale(.95);
+    }
+  }
+}
+
 // *** CONTACT *** //
 form {
   @include top-spacing;
