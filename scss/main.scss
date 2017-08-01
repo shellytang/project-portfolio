@@ -86,7 +86,7 @@ a.navbar-item {
   }
 }
 
-// *** OPAQUE NAV STYLES (ON SCROLL) ****
+// OPAQUE NAV STYLES (ON SCROLL TO ABOUT)
 .remove-transparent {
   transition: background-color 0.7s ease;
   background-color: $scrolled-navbar-color;
@@ -103,7 +103,7 @@ a.navbar-item {
 }
 
 .about-content {
-  background-color: $secondary-background;
+  // background-color: $secondary-background;
   p:first-child {
     @include bottom-spacing;
   }
@@ -114,7 +114,7 @@ a.navbar-item {
 
 // **** SKILLS **** //
 .skills-content {
-  // background-color: $secondary-background;
+  background-color: $secondary-background;
   .column {
     @include top-spacing;
   }
@@ -150,7 +150,7 @@ a.navbar-item {
       transition: transform 0.5s, opacity 0.5s;
 
       &:hover {
-        transform: scale(.95);
+        transform: scale(1.05);
       }
     }
   }

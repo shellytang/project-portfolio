@@ -49,6 +49,7 @@ $(function() {
       $('.navbar').removeClass('remove-transparent');
     }
   });
+
 // copyright year
   $('.year').html(new Date().getFullYear());
 });
