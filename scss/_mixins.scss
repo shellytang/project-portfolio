@@ -1,4 +1,4 @@
-
+// margins //
 @mixin top-spacing {
     margin-top: 50px
 }
@@ -7,6 +7,7 @@
     margin-bottom: 15px;
 }
 
+// social icons //
 @mixin darken-social-icon($color) {
   &:hover {
     color: darken($color, 10%);
@@ -16,5 +17,47 @@
 @mixin lighten-social-icon($color) {
   &:hover {
     color: lighten($color, 30%);
+  }
+}
+
+// transparent navbar //
+@mixin transparent-nav-background {
+  background-color: $transparent;
+}
+
+@mixin transparent-nav-span {
+  span {
+    background-color: $white;
+  }
+}
+
+// scrolled navbar //
+@mixin scrolled-nav-background {
+  background-color: $transparent;
+}
+
+@mixin scrolled-nav-span {
+  span {
+    background-color: $text;
+  }
+}
+
+@mixin scrolled-nav {
+  a.navbar-item {
+    color: $text;
+    &:hover {
+      @include scrolled-nav-background;
+      color: $text;
+    }
+  }
+  .navbar-burger {
+    @include scrolled-nav-background;
+    @include scrolled-nav-span;
+    &.is-active {
+      @include scrolled-nav-span;
+    }
+    &:hover {
+      @include scrolled-nav-background;;
+    }
   }
 }
