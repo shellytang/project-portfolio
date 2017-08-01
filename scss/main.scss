@@ -20,31 +20,56 @@ h2.title:after {
     margin-top: 25px;
 }
 
-h3 {
-  margin-top: 15px;
+h3 { margin-top: 15px;}
+
+// **** HEADER ****** //
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  .hero-body {
+    h1, h2 {
+      color: $header-hero;
+    }
+  }
 }
 
 // ***** NAVBAR ****** //
+
+//  TRANSPARENT NAV STYLES
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  @include transparent-nav-background;
+  z-index: 9999;
+}
+
+.navbar-brand { margin-left: 20px;}
+
 .logo {
   height: 300px;
   width: auto;
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  box-shadow: 0 2px 2px $white-ter;
-  z-index: 9999;
+.navbar-burger {
+  @include transparent-nav-span;
+  &.is-active {
+    @include transparent-nav-span;
+  }
+  &:hover {
+    @include transparent-nav-background;
+  }
 }
 
-.navbar-brand {
-  margin-left: 20px;
-}
-
-.navbar-item:hover,
-.navbar-burger:hover {
-  background-color: $navbar-background;
+a.navbar-item {
+  color: $white;
+  &:hover {
+    @include transparent-nav-background;
+    color: $white;
+  }
 }
 
 @include desktop {
@@ -54,16 +79,21 @@ h3 {
       border-bottom: 2px solid transparent;
       transition: border-bottom 0.2s;
       &:hover, &:active {
+        color: $white;
         border-bottom: 4px solid $primary;
       }
     }
   }
 }
 
-// *** LANDING *** //
-#landing {
-  margin-top: $navbar-height;
+// OPAQUE NAV STYLES (ON SCROLL TO ABOUT)
+.remove-transparent {
+  transition: background-color 0.7s ease;
+  background-color: $scrolled-navbar-color;
+  box-shadow: 0 2px 2px #efefef;
+  @include scrolled-nav;
 }
+
 
 // **** ABOUT **** //
 .shelly-photo {
@@ -72,8 +102,8 @@ h3 {
   margin: 0 25%;
 }
 
-#about {
-  background-color: $secondary-background;
+.about-content {
+  // background-color: $secondary-background;
   p:first-child {
     @include bottom-spacing;
   }
@@ -83,15 +113,15 @@ h3 {
 }
 
 // **** SKILLS **** //
-#skills {
-  // background-color: $secondary-background;
+.skills-content {
+  background-color: $secondary-background;
   .column {
     @include top-spacing;
   }
 }
 
 // **** WORK *** //
-#work {
+.work-content {
   .column {
     @include top-spacing;
     p {
@@ -113,14 +143,14 @@ h3 {
 }
 
 @include desktop {
-  #work {
+  .work-content {
     padding-top: 15vh;
     .image {
       transform: scale(1.00);
       transition: transform 0.5s, opacity 0.5s;
 
       &:hover {
-        transform: scale(.95);
+        transform: scale(1.05);
       }
     }
   }
@@ -128,9 +158,7 @@ h3 {
 }
 
 // *** CONTACT *** //
-form {
-  @include top-spacing;
-}
+form { @include top-spacing;}
 
 @include desktop {
   form {

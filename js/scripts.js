@@ -36,4 +36,20 @@ $(function() {
       }
     }
   });
+
+  //scroll nav
+  let scrollStart = 0;
+  let startChange = $('#about');
+  let offset = startChange.offset().top - 60;
+  $(document).scroll(function() {
+    scrollStart = $(this).scrollTop();
+    if(scrollStart > offset) {
+      $('.navbar').addClass('remove-transparent');
+    } else {
+      $('.navbar').removeClass('remove-transparent');
+    }
+  });
+
+// copyright year
+  $('.year').html(new Date().getFullYear());
 });
