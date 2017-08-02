@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "watch": "gulp watch",
-    "dev": "gulp dev"
+    "dev": "gulp dev",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "gulp-uglify": "^3.0.0"
   },
   "dependencies": {
-    "bulma": "^0.4.4"
+    "bulma": "^0.4.4",
+    "express": "^4.15.3"
   }
 }
