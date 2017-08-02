@@ -115,7 +115,6 @@ a.navbar-item {
 
 // **** SKILLS **** //
 .skills-content {
-  // background-color: $secondary-background;
   .column {
     @include top-spacing;
   }
@@ -123,6 +122,7 @@ a.navbar-item {
 
 // **** WORK *** //
 .work-content {
+  background-color: $secondary-background;
   .column {
     @include top-spacing;
     p {
@@ -168,6 +168,8 @@ form { @include top-spacing;}
     margin-right: 10%;
   }
 }
+
+// *** FOOTER *** //
 
 .fa-github {
   color: $github-social;
