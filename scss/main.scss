@@ -96,15 +96,16 @@ a.navbar-item {
 
 
 // **** ABOUT **** //
-.shelly-photo {
-  border-radius: 100%;
-  width: 50%;
-  margin: 0 25%;
+.self-photo {
+  border-radius: 50%;
+  width: 60%;
+  margin: 0 20%;
 }
 
 .about-content {
-  // background-color: $secondary-background;
-  p:first-child {
+  background-color: $secondary-background;
+  p:first-child,
+  p:nth-of-type(2) {
     @include bottom-spacing;
   }
   .column {
@@ -114,7 +115,7 @@ a.navbar-item {
 
 // **** SKILLS **** //
 .skills-content {
-  background-color: $secondary-background;
+  // background-color: $secondary-background;
   .column {
     @include top-spacing;
   }
@@ -151,6 +152,7 @@ a.navbar-item {
       &:hover {
         transform: scale(1.05);
       }
+
     }
   }
 
