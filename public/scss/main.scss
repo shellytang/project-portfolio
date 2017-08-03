@@ -169,6 +169,9 @@ form { @include top-spacing;}
 }
 
 // *** FOOTER *** //
+.footer {
+  padding: 1.5rem .75rem 3rem
+}
 
 .fa-github {
   color: $github-social;
