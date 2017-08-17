@@ -9,7 +9,7 @@ const autoprefixer = require('gulp-autoprefixer');
 // launch server
 gulp.task('browser-sync', ['styles'], function() {
   browserSync.init({
-    server: './public',
+    server: './',
     port: 3000,
   });
 });
@@ -34,7 +34,7 @@ gulp.task('html', function() {
 
 gulp.task('watch', ['styles', 'html'], function() {
   gulp.watch('./public/scss/main.scss', ['styles']);
-  gulp.watch(['./public/index.html'], ['html']);
+  gulp.watch(['index.html'], ['html']);
 });
 
 gulp.task('dev', ['browser-sync', 'watch']);
