@@ -183,11 +183,6 @@ form { @include top-spacing;}
   @include darken-social-icon($linkedin-social);
 }
 
-.fa-envelope-o {
-  color: $gmail-social;
-  @include darken-social-icon($gmail-social);
-}
-
 @include desktop {
   a.icon:nth-of-type(2) {
     padding-right: 30px;
