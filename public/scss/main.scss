@@ -132,6 +132,13 @@ a.navbar-item {
 
   h3 {
     @include bottom-spacing;
+    // &:hover {
+    //   color: $link-secondary;
+    // }
+  }
+
+  .github-link {
+    // text-decoration: underline;
     &:hover {
       color: $link-secondary;
     }
